@@ -1,0 +1,28 @@
+$def with (nav, form, message)
+
+<head>
+    <title>Beelance2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="static/stylesheet.css">
+    <link rel="shortcut icon" type="image/png" href="static/honeybee.png"/>
+
+</head>
+
+<body>
+    
+    $:nav
+    <h3>Reset password</h3>
+
+    $if message != "":
+        <h4>$:message</h4>
+    
+    <form method="POST">
+        $:form.render()
+    </form> 
+        
+
+    
+    
+    <img src="static/honeybee.png" alt="Honeybee">
+
+</body>

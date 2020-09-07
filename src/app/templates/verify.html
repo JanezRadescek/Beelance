@@ -1,0 +1,23 @@
+$def with (nav, verify_form)
+
+<head>
+    <title>Beelance2</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="static/stylesheet.css">
+    <link rel="shortcut icon" type="image/png" href="static/honeybee.png"/>
+
+</head>
+
+<body>
+    
+    $:nav
+
+    <h3>Verify mail</h3>
+    <h4>Check mail for verification number.</h4>
+    <form method="POST">
+        $:verify_form.render()
+    </form> 
+
+    <img src="static/honeybee.png" alt="Honeybee">
+
+</body>

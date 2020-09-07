@@ -1,0 +1,4 @@
+web.py==0.40
+mysql-connector==2.2.9
+pyotp==2.3.0
+python-dotenv
